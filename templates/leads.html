@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+        <title>The Perfect Waist Trainer</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+
+<script id="loadcss">
+(function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}
+(['static/css/lead.css','//fonts.googleapis.com/css?family=Open+Sans:400,700','//fonts.googleapis.com/css?family=Rokkitt:400,700', 'static/css/reset.css', 'static/css/global.css', 'static/css/responsive1.css', 'static/css/forms.css'],document.getElementById("loadcss")));</script>
+
+    </head>
+    <body>
+
+    <div id="error_handler_overlay">
+        <div class="error_handler_body">
+
+            <a href="javascript:void(0);" id="error_handler_overlay_close">X</a>
+
+
+            <h2 id="model_headline"> Processing Order...</h2>
+
+            <div class="modal_container" id ='modal_container'>
+                <center>  <div class="loader"></div></center>
+                <p id="model_content">Please do not refresh or press the button while we submit your order.</p>
+            </div>
+
+
+
+
+
+        </div></div>
+
+
+
+
+
+
+
+        <div id="topbar">
+            LIMITED SUPPLY. OFFER EXPIRES IN
+            <span class="blink_me" id="timer"></span>
+        </div>
+        <div id="wrapper" class="cp-wrapper">
+
+            <center>
+            <img src="static/images/logo.png" alt="logo" class="logo">
+            </center>
+            <img src="static/images/steps-1.jpg" alt="" id="steps-2" class="" />
+            <div id="approved">
+                <div id="approved-content">
+                    <h1>Verify Shipping Information</h1>
+                    <p>Please submit shipping details for guaranteed delivery. Your order is almost complete.</p>
+                </div>
+                <div id="form">
+
+
+
+                    <form name='opt_in_form' id='opt_in_form' action='' method='post'>
+
+        {% for field in form %}
+
+{% if field.type == 'CSRFTokenField' %}
+    {{ field }}
+
+    {% if field.errors %}
+        <div class="warning">You have submitted an invalid CSRF token</div>
+    {% endif %}
+
+{% elif field.type == 'HiddenField' %}
+    {{ field }}
+    {% elif field.type=='SelectField' %}
+    {{ field }}
+
+        {% elif field.type=='SubmitField' %}
+    <div id="cp-1-purple-bottom">
+                            <div id="security-tag" class="after gray">
+                                <p><img src="static/images/lock-gray.jpg" alt="" /> Secure 256 Bit Encrypted Connection.</p>
+                            </div>
+
+ {{ field }}
+                            <img src="static/images/secure2.jpg" alt="" id="security" style="margin-top:10px;" />
+                        </div>
+
+
+
+{% else %}
+    <div>
+
+            <p>{{field.label}}</p>
+            {{ field}}</div>
+    {% endif %}
+
+{% endfor %}
+                        <input type="hidden" id="country" name="country" value="US" />
+                        <input type="hidden" id="submitted" name="submitted" value="1" />
+   <input type="hidden" name="sub" value="1" />
+                    <input type="hidden" name="state_hidden" value="">
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div id="btm">
+            <div id="footer">
+                <ul class="footer_nav">
+                    <li>
+                        <a class="modalClick"  href="settings/update/contact.php">Contact</a>
+                    </li>
+                    <li>
+                        <a class="modalClick"  href="settings/update/privacy.php">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="modalClick"  href="settings/update/term.php">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <script src="static/js/jquery.js"></script>
+
+        <script src='static/js/jquery.scrollTo.min.js'></script>
+        <script src='static/js/leads.js'></script>
+
+
+
+    </body></html>

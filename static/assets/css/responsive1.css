@@ -1,0 +1,171 @@
+
+
+
+.blink_me
+{
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+	25% { opacity: 0.0; }
+}
+
+#topbar
+{
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #ef2c5d none repeat scroll 0% 0%;
+    font-weight: bold;
+    padding: 5px 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media (min-width: 767px) and (max-width: 900px)
+{
+    #wrapper
+    {
+        width: 760px;
+    }
+
+    #approved-content h1
+    {
+        font-size: 28px;
+        padding: 10px 0 0;
+    }
+
+    form label
+    {
+        font-size: 18px;
+    }
+    input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
+    {
+        height: 30px;
+        padding: 3px 0 3px 7px;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    form select
+    {
+        width: 95.5% !important;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #security-tag
+    {
+        padding: 10px 0;
+    }
+    #security-tag img
+    {
+        vertical-align: -20%;
+        width: 1.5%;
+    }
+    #cp-1-purple-bottom
+    {
+        text-align: center;
+    }
+    input[type="submit"]
+    {
+        background: transparent url("../images/cp-1-off-btn.png") no-repeat scroll 0px 0px / 100% auto;
+        width: 55%;
+        height: 101px;
+        border: medium none;
+        text-indent: -9999px;
+        border-radius: 0px;
+        margin: 0px auto;
+    }
+    #security
+    {
+        width: 30%;
+    }
+
+    #btm
+    {
+        padding-bottom: 0;
+    }
+    #cvv-img
+    {
+        width: 35%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1424px)
+{
+
+    #wrapper
+    {
+        width: 760px;
+        position: relative;
+    }
+
+    #approved-content h1
+    {
+        font-size: 28px;
+        padding: 10px 0 0;
+    }
+
+    form label
+    {
+        font-size: 18px;
+    }
+    input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
+    {
+        height: 30px;
+        padding: 3px 0 3px 7px;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    form select
+    {
+        width: 95.5% !important;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #security-tag
+    {
+        padding: 10px 0;
+    }
+    #security-tag img
+    {
+        vertical-align: -20%;
+        width: 1.5%;
+    }
+    #cp-1-purple-bottom
+    {
+        text-align: center;
+    }
+@media (min-width: 900px) and (max-width: 1424px)
+{
+    input[type="submit"]
+    {
+        background: transparent url("../images/cp-1-off-btn.png") no-repeat scroll 0px 0px / 100% auto;
+        width: 55%;
+        height: 101px;
+        border: medium none;
+        text-indent: -9999px;
+        border-radius: 0;
+        margin: 0 auto;
+    }
+}
+
+    #security
+    {
+        width: 30%;
+    }
+
+    #btm
+    {
+        padding-bottom: 0;
+    }
+    #cvv-img
+    {
+        width: 35%;
+    }
+}
+

@@ -1,0 +1,326 @@
+
+
+body
+{
+    background: #fffff;
+}
+
+#wrapper
+{
+    width: 320px;
+    margin: 0 auto;
+    font-family: helvetica;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.after:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#banner
+{
+    padding: 20px 15px 20px 15px;
+    border-bottom: 1px solid #d6d6d6;
+    background: white;
+}
+
+#banner > #logo
+{
+    width: 27%;
+    position: relative;
+    top: 1px;
+}
+
+#banner > #flag
+{
+    width: 7%;
+    position: relative;
+    top: 11px;
+}
+
+#banner p
+{
+    font-size: 11px;
+    position: relative;
+    top: 14px;
+    left: 14px;
+}
+
+.fl
+{
+    float: left;
+}
+
+.fr
+{
+    float: right;
+}
+
+#confirm
+{
+    padding: 15px 20px 15px 20px;
+    border-bottom: 1px solid #d6d6d6;
+    background: #f8f6f2;
+}
+
+#confirm h1
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a5a5a;
+    margin-bottom: 7px;
+}
+
+#confirm p
+{
+    font-size: 12px;
+    line-height: 16px;
+    color: #5a5a5a;
+}
+
+#thank-you
+{
+    padding: 20px 20px 0 20px;
+    background: #f8f6f2;
+}
+
+#thank-you #ty-msg > h2
+{
+    font-weight: bold;
+    font-size: 13.5px;
+    color: #f96401;
+    margin-bottom: 5px;
+}
+
+#thank-you #ty-msg > a
+{
+    background: url(11.png) no-repeat;
+    width: 100%;
+    height: 143px;
+    background-size: 100%;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+#thank-you #ty-msg > a
+{
+    background: url(11.png) no-repeat;
+    width: 100%;
+    height: 143px;
+    background-size: 100%;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+
+#thank-you #ty-msg2 > h2
+{
+    font-weight: bold;
+    font-size: 13.5px;
+    color: #f96401;
+    margin-bottom: 5px;
+}
+
+
+#thank-you #ty-msg > p
+{
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+}
+
+input[type="submit"]
+{
+    background: url(btn.png) no-repeat;
+    width: 100%;
+    height: 57px;
+    background-size: 100%;
+    border: none;
+    text-indent: -9999px;
+    background-position: 0 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input[type="submit"]:active:hover, #thank-you:active:hover input[type="submit"]
+{
+    background-position: 0 -60px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#no-thanks
+{
+    width: 180px;
+    margin: 10px auto;
+}
+
+#no-thanks > img
+{
+    vertical-align: -15%;
+    width: 7%;
+}
+
+#no-thanks a
+{
+    color: #868686;
+    font-size: 12px;
+}
+
+#secure
+{
+    font-size: 12px;
+    padding: 20px 0 3px 0;
+    width: 73%;
+    margin: 0 auto;
+    color: #5a5a5a;
+}
+
+#secure p
+{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+#security
+{
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 0px;
+}
+
+#btm
+{
+    background: #f8f6f2;
+    padding-top: 10px;
+}
+
+#terms
+{
+    font-size: 11px;
+    line-height: 14px;
+    padding: 25px 20px 25px 20px;
+    color: #a5a5a5;
+    border-bottom: 1px solid #d6d6d6;
+    text-align: justify;
+}
+
+footer
+{
+    color: #a5a5a5;
+    font-size: 10px;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul li
+{
+    display: inline-block;
+    float: none;
+    padding: 0 2px;
+}
+
+footer a
+{
+    color: #a5a5a5;
+}
+
+footer p
+{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+#discountsection
+{
+    background-color: red;
+    border-bottom: 4px dashed white;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 35px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#discountoffset
+{
+    height: 18px;
+    padding: 12px 0;
+    position: relative;
+    width: 100%;
+}
+
+form select
+{
+    border: 1px solid #929292;
+}
+
+@media screen and (max-width: 640px)
+{
+    #wrapper
+    {
+    }
+/*******16th sept******/
+    #mainWrapper
+    {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content
+    {
+        cursor: auto;
+        padding: 2%;
+        width: 90%!important;
+    }
+    .panel
+    {
+        margin-bottom: 0;
+    }
+    .secureSigns
+    {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px)
+{
+    #wrapper
+    {
+        zoom: 177%;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    #wrapper
+    {
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    #wrapper
+    {
+        zoom: 0 !important;
+    }
+}
+
